@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* anousment bar Css Start */
+.anousment-bar {
+    background-color: black;
+}
+
+/* anousment bar Css end */
+
+/* Navbar dekstop Css Start  */
+
+.dekstop-header {
+    display: block;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+    transition: 0.8s;
+}
+
+/* Navbar dekstop Css End  */
+
+.account-inner-box{
+    position: absolute;
+    right: 0.5rem;
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    z-index: 1;
+}
+
+/* Navbar mobile Css Start  */
+
+.mobile-header {
+    display: none;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Navbar mobile Css End  */
+
+/* Navbar media quary start  */
+@media screen and (max-width:991px) {
+
+    .desktop-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    .mobile-menu{
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        position: relative;
+        top: 0;
+    }
+    .mobile-menu li a{
+        color: white;
+    }
+    
+    .mobile-header .logo img {
+        height: auto;
+        width: 35vw;
+    }
+
+    .nav-input {
+        width: 100%;
+    }
+
+    .bi-list {
+        cursor: pointer;
+    }
+    
+}
+
+/* Navbar media quary end  */
+
+
+/* section 1 css start */
+
+.section-1 .home-page-img img {
+    height: auto;
+    width: 100%;
+}
+
+/* section 1 css end */
+
+/* Flash Sales css start */
+
+.aero-btn button {
+    height: 40px;
+    width: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: rgb(220, 217, 217);
+}
+
+.icon-heart-eye {
+    position: absolute;
+    right: 2rem;
+    top: 0.5rem;
+}
+
+.discount-btn {
+    background-color: rgba(219, 68, 68, 1);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.Flash-Sales img {
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    object-fit: contain;
+}
+
+.product:hover .add-to-cart {
+    bottom: 0;
+}
+
+.add-to-cart-parent {
+    position: relative;
+    overflow: hidden;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    position: absolute;
+    transition: 0.5s;
+    left: 0rem;
+    right: 0rem;
+    bottom: -10rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Flash Sales css end */
+
+
+/* Browse-By-Category css start */
+
+.Browse-By-Category-card-section i {
+    font-size: xx-large;
+}
+
+.Browse-By-Category-card:hover {
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+/* Browse-By-Category css end */
+
+/* Best-Selling-Products css start */
+
+.icon-heart-eye {
+    position: absolute;
+    right: 2rem;
+    top: 0.5rem;
+}
+
+.Best-Selling-Products img {
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    object-fit: contain;
+}
+
+.Best-Selling-Products .product:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.Best-Selling-Products .product:hover .add-to-cart {
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Best-Selling-Products css end */
+
+/* Enhance-Your-Music-Experience css start  */
+
+.Enhance-Your-Music-Experience .container {
+    background-color: black;
+}
+
+.Enhance-Your-Music-Experience .container img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.Enhance-Your-Music-Experience .container .timer {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Enhance-Your-Music-Experience .container .timer:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.Enhance-Your-Music-Experience .container button:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+/* Enhance-Your-Music-Experience css start  */
+
+
+/* Explore Our Products css start  */
+
+.icon-heart-eye {
+    position: absolute;
+    right: 2rem;
+    top: 0.5rem;
+}
+
+.Explore-Our-Products img {
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    object-fit: contain;
+}
+
+.Explore-Our-Products .product:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.Explore-Our-Products .product:hover .add-to-cart {
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.second-section .discount-btn {
+    background-color: rgba(0, 255, 102, 1);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+/* Explore Our Products css end  */
+
+/* New Arrival css start */
+
+.custom-card {
+    position: relative;
+    color: white;
+    background-color: black;
+    text-align: left;
+    padding: 20px;
+    height: 100%;
+}
+
+.PlayStation-box{
+    position: absolute;
+    bottom: 10rem;
+}
+.custom-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.custom-card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* New Arrival css end */
+
+
+/* truck/head-phone/money-check-icons css start */
+
+.truck-container .truck {
+    background-color: lightgray;
+    border-radius: 50%;
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.truck-container .truck i {
+    background-color: black;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 10px 15px;
+    color: white;
+}
+
+.head-phone-container .head-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 5rem;
+}
+
+.head-phone-container .head-phone i {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.money-check-container .money-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 5rem;
+}
+
+.money-check-container .money-check i {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* truck/head-phone/money-check-icons css end */
+
+/* footer css start */
+
+.desktop-footer{
+    background-color: black;
+}
+
+footer h4{
+    padding-bottom: 30px;
+}
+
+
+.column-5 p {
+    font-size: 10px;
+}
+
+.column-5-inner {
+    display: flex;
+    flex-direction: wrap;
+    gap: 15px;
+}
+
+/* footer css end */
