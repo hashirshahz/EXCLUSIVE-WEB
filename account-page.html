@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SIGN UP</title>
+    <title>ACCOUNT PAGE</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="account-page.css">
     <link rel="icon" type="image/svg+xml" href="https://as2.ftcdn.net/jpg/01/09/65/39/1000_F_109653972_1IysHmwEMaJAn5Nw0Kos18p8cro0VwXM.jpg">
 </head>
 
 <body>
-
 
     <div class="anousment-bar">
         <div class="container">
@@ -37,15 +36,15 @@
             <div class="row align-items-baseline">
                 <div class="col-md-4">
                     <div class="logo">
-                        <a href=""><img src="./image/logo.png" alt="logo"></a>
+                        <a href=""><img src="./about-page-image/logo.png" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-md-4 text-light">
                     <ul class="row desktop-menu justify-content-around list-unstyled">
-                        <li><a class="" href="../HOME PAGE/index.html">Home</a></li>
-                        <li><a class="" href="../CONTACT PAGE/index.html">Contact</a></li>
-                        <li><a class="" href="../ABOUT PAGE/index.html">About</a></li>
-                        <li><a class="" href="../CART/index.html">Cart</a></li>
+                        <li><a class="" href="./index.html">Home</a></li>
+                        <li><a class="" href="./contact-page.html">Contact</a></li>
+                        <li><a class="" href="./about-page.html">About</a></li>
+                        <li><a class="" href="./cart-page.html">Cart</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -62,7 +61,7 @@
                             <i class="bi bi-cart"></i>
                         </div>
                         <div>
-                            <i class="bi bi-person"></i>
+                            <i class="bi bi-person" id="account-icon" onclick="toggleAccountIcon()"></i>
                         </div>
                     </div>
                 </div>
@@ -70,18 +69,45 @@
         </div>
     </div>
 
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="account-inner-box p-4" id="account-inner-box">
+                        <div>
+                            <i class="bi bi-person fs-4 fw-bold px-3"></i><span>Manage My Account</span>
+                        </div>
+                        <div class="mt-2">
+                            <i class="bi bi-bag fs-4 fw-bold px-3"></i><span>My Order</span>
+                        </div>
+                        <div class="mt-2">
+                            <i class="bi bi-x-circle fs-4 fw-bold px-3"></i><span>My Cancellations</span>
+                        </div>
+                        <div class="mt-2">
+                            <i class="bi bi-star fs-4 fw-bold px-3"></i><span>My Reviews</span>
+                        </div>
+                        <div class="mt-2">
+                            <i class="bi bi-box-arrow-left fs-4 fw-bold px-3"></i><span>Logout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="mobile-header border-bottom m-4">
         <div class="container">
             <div class="row align-items-baseline">
                 <div class="col">
                     <div class="logo">
-                        <img src="./image/logo.png" alt="">
+                        <img src="./about-page-image/logo.png" alt="logo">
                     </div>
                 </div>
                 <div class="col p-0 text-right">
                     <i class="bi bi-heart px-1"></i>
                     <i class="bi bi-cart px-2"></i>
-                    <i class="bi bi-person px-2"></i>
+                    <!-- <i class="bi bi-person px-2"></i> -->
+                    <i class="bi bi-person px-2" id="mobile-account-icon"></i>
                     <i class="bi bi-list" id="menuBtn" onclick="toggleMenu()"></i>
                 </div>
             </div>
@@ -96,62 +122,100 @@
             </div>
             <div class="col mt-2">
                 <ul class="mobile-menu list-unstyled" id="menuList">
-                    <li class="pt-2"><a class="" href="../HOME PAGE/index.html">Home</a></li>
-                    <li class="pt-2"><a class="" href="../CONTACT PAGE/index.html">Contact</a></li>
-                    <li class="pt-2"><a class="" href="../ABOUT PAGE/index.html">About</a></li>
-                    <li class="pt-2"><a class="" href="../CART/index.html">Cart</a></li>
+                    <li class="pt-2"><a class="" href="./index.html">Home</a></li>
+                    <li class="pt-2"><a class="" href="./contact-page.html">Contact</a></li>
+                    <li class="pt-2"><a class="" href="./about-page.html">About</a></li>
+                    <li class="pt-2"><a class="" href="./cart-page.html">Cart</a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </div> 
 
 
-    <section class="sign-up mt-5">
+    <section class="mt-5">
         <div class="container">
-            <div class="row justify-content-center align-item-center">
-                <div class="col-md-6 col-12">
-                    <div>
-                        <img style="height: 70vh;" src="./image/sign-up-page-img.png" alt="">
+            <div class="row">
+                <div class="col">
+                    <div class="">
+                        <span class="text-secondary">Home</span>
+                        <span class="mx-2">/</span>
+                        <span class="mx-2">My Account</span>
                     </div>
                 </div>
-                <div class="col-md-6 col-12">
-                    <div class="create-account">
-                        <div>
-                            <h1>CREATE AN ACCOUNT</h1>
-                        </div>
-                        <div>
-                            <p>Enter your details below</p>
-                        </div>
-                        <div>
-                            <input class="input mt-3" type="name" placeholder="Name">
-                        </div>
-                        <div>
-                            <input class="input mt-3" type="email" placeholder="Email or Phone Number">
-                        </div>
-                        <div>
-                            <input class="input mt-3" type="password" placeholder="password">
-                        </div>
-                        <div>
-                            <button class="button-one mt-3 text-light" type="button">Create Account</button>
-                        </div>
-                        <div>
-                            <div class="button-two-container">
-                                <img src="./image/Icon-Google.png" alt="Icon-Google">
-                                <button class="button-two mt-3 px-2 border-0" type="button">Sign up with Google</button>
-    
-                            </div>
-                        </div>
-                        <div class="login-text d-flex px-5">
-                            <p> Already have account? </p>
-                            <a class="px-3" href="#">Log in</a>
-                        </div>
-                    </div>
+                <div class="col">
+                    <span class="float-right">Welcome!<span class="text-danger">Md Rimel</span></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- fotter-section -->
+    <section class="mt-5">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4">
+                    <div class="Manage-My-Account">
+                        <ul class="list-unstyled text-black">Manage My Account
+                            <li class="text-danger p-2">My Profile</li>
+                            <li class="text-secondary p-2">Address Book</li>
+                            <li class="text-secondary p-2">My Payment Options</li>
+                        </ul>
+                        <ul class="list-unstyled text-black">My Orders
+                            <li class="text-secondary p-2">My Returns</li>
+                            <li class="text-secondary p-2">My Cancellations</li>
+                        </ul>
+                        <p class="">My WishList</p>
+                    </div>
+                </div>
+
+                <div class="col-md-8 p-5 Edit-Your-Profile">
+                    <div>
+                        <h4 class="text-danger">Edit Your Profile</h4>
+                    </div>
+
+                    <div class="d-flex justify-content-between flex-wrap mt-4">
+                        <div class="">
+                            <p>First Name</p>
+                            <input class="border rounded px-5 py-2 bg-light " type="text" placeholder="Md">
+                        </div>
+                        <div class="">
+                            <p>Last Name</p>
+                            <input class="border rounded px-5 py-2 bg-light" type="text" placeholder="Rimel">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between flex-wrap mt-4">
+                        <div>
+                            <p>Email</p>
+                            <input class="border rounded px-5 py-2 bg-light " type="text"
+                                placeholder="rimel1111@gmail.com">
+                        </div>
+                        <div class="">
+                            <p>Address</p>
+                            <input class="border rounded px-5 py-2 bg-light" type="text"
+                                placeholder="Kingston, 5236, United State">
+                        </div>
+                    </div>
+
+                    <p class="mt-4">Password Changes</p>
+
+                    <input style="width: 100%;" class="border rounded px-5 py-2 bg-light" type="text"
+                        placeholder="Current Passwod">
+                    <div>
+                        <input style="width: 100%;" class="border rounded mt-4 px-5 py-2 bg-light" type="text"
+                            placeholder="New Passwod">
+                    </div>
+                    <div>
+                        <input style="width: 100%;" class="border rounded mt-4 px-5 py-2 bg-light" type="text"
+                            placeholder="Confirm New Passwod">
+                    </div>
+                    <div class="d-flex align-item-center float-right mt-4">
+                        <p class="mx-4 mt-3">Cancel</p>
+                        <button class="bg-danger py-2 px-5 text-light border rounded">Save
+                            Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="desktop-footer mt-5">
         <div class="container text-white">
@@ -196,10 +260,10 @@
                         <h4>Download App</h4>
                         <p>Save $3 with App New User Only</p>
                         <div class="column-5-inner">
-                            <img src="./image/Qrcode 1.png" alt="QR Code">
+                            <img src="./account-page-image/Qrcode 1.png" alt="QR Code">
                             <div>
-                                <img src="./image/google(image).png" alt="">
-                                <img src="./image/appstore(image).png" alt="">
+                                <img src="./account-page-image/google(image).png" alt="google image">
+                                <img src="./account-page-image/appstore(image).png" alt="">
                             </div>
 
                         </div>
@@ -217,8 +281,7 @@
         </div>
     </footer>
 
-
-    <script src="app.js"></script>
+    <script src="account-page.js"></script>
 </body>
 
 </html>
