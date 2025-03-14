@@ -103,8 +103,10 @@ ul li a {
 
 
 .create-account {
-    margin-top: 5rem;
-    margin-left: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
 
 .create-account h1 {
